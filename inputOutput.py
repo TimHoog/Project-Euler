@@ -1,4 +1,3 @@
-import eulerChallenges
 import answerSheet
 
 
@@ -22,6 +21,19 @@ def askinput():
 
 def runfunction(userinput):
     import time
+    #challengeresult = [caculated answer, actual answer, calc time]
+    challengeresult = []
+    t0 = time.time()
+    challenge = answerSheet.eulerChallengeList[userinput]
+    challengeresult.append(str(challenge[0]()))
+    challengeresult.append(challenge[1])
+    t1 = time.time()
+    challengeresult.append(t1-t0)
+    return challengeresult
+
+def runfunction2(userinput):
+    import time
+    #challengeresult = [caculated answer, actual answer, calc time]
     challengeresult = []
     t0 = time.time()
     challenge = answerSheet.eulerChallengeList[userinput]
@@ -41,5 +53,3 @@ def checkresult(answerlist):
     print("We calculated the following:   " + str(answerlist[0]))
     print("calculating took " + str(answerlist[2]) + " seconds.")
     print(x)
-
-
