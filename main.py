@@ -1,4 +1,3 @@
-import eulerChallenges
 import inputOutput
 
 
