@@ -82,3 +82,25 @@ def eulerchallenge6():
 
 def eulerchallenge7():
     return prime.nthPrime(10001)
+
+def eulerchallenge8():
+    numberString = ""
+    with open("bigData.txt") as fp:
+        for i, line in enumerate(fp):
+            if i > 0:
+                x = line.strip()
+                numberString += x
+            if i > 22:
+                fp.close()
+                break
+    print(numberString)
+
+    highestProduct = 0
+    for i in range(1000-13):
+        x = 1
+        for j in range(13):
+            x = x * int(numberString[i+j])
+        if x > highestProduct:
+            highestProduct = x
+    return highestProduct
+    

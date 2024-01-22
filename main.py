@@ -9,3 +9,4 @@ challengeAnswer = inputOutput.runfunction(eulerChallengeNr)
 
 # Print challenge results
 inputOutput.checkresult(challengeAnswer)
+

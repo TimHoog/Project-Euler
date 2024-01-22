@@ -10,7 +10,7 @@ eulerChallengeList: Dict[int, list] = {
     5: [eulerChallenges.eulerchallenge5, "232792560", "Smallest Multiple"],
     6: [eulerChallenges.eulerchallenge6, "25164150", "Sum Square Difference"],
     7: [eulerChallenges.eulerchallenge7, "104743", "10001st Prime"],
-    8: "23514624000",
+    8: [eulerChallenges.eulerchallenge8, "23514624000", "Largest Product in a Series"],
     9: "31875000",
     10: "142913828922",
     11: "70600674",
