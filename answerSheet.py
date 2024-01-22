@@ -3,13 +3,13 @@ from typing import Dict
 import eulerChallenges
 
 eulerChallengeList: Dict[int, list] = {
-    1: [eulerChallenges.eulerchallenge1, "233168", "Multiples of 3 or 5", ],
+    1: [eulerChallenges.eulerchallenge1, "233168", "Multiples of 3 or 5"],
     2: [eulerChallenges.eulerchallenge2, "4613732", "Even Fibonacci Numbers"],
     3: [eulerChallenges.eulerchallenge3, "6857", "Largest Prime Factor"],
     4: [eulerChallenges.eulerchallenge4, "906609", "Largest Palindrome Product"],
     5: [eulerChallenges.eulerchallenge5, "232792560", "Smallest Multiple"],
-    6: "25164150",
-    7: "104743",
+    6: [eulerChallenges.eulerchallenge6, "25164150", "Sum Square Difference"],
+    7: [eulerChallenges.eulerchallenge7, "104743", "10001st Prime"],
     8: "23514624000",
     9: "31875000",
     10: "142913828922",

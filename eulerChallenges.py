@@ -57,6 +57,7 @@ def eulerchallenge5():
     #To check all modulo's 1~20 for a number, we only need to check 11~20
     #we start at 11 and multiply that till we reach modulo 12==0
     #that will be the new starting multiplier till we reach mudulo 13==0 etc
+    #This gives us an answer in just 81 calculations, instead of 20 * 230mil if we were to brute force
     multiplier = 11
     testNum = 0
     for i in range(12, 21):
@@ -69,3 +70,15 @@ def eulerchallenge5():
             num = num + multiplier
     return multiplier
 
+def eulerchallenge6():
+    x = 0
+    y = 0
+    for i in range(1,101):
+        x = x + (i*i)
+    for j in range(1, 101):
+        y = y + j
+    y = y * y
+    return y - x
+
+def eulerchallenge7():
+    return prime.nthPrime(10001)
